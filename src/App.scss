@@ -1,0 +1,28 @@
+@import "../styles/text.scss";
+
+.title-sect{
+
+  .App-header {
+    background-color: #2d333f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: em(25);
+    // align-items: center;
+    // justify-content: center;
+    // font-size: calc(10px + 2vmin);
+    color: white;
+    .header-title{
+      margin-bottom: em(2);
+    }
+    .header-subtext{
+      
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+@import "settings.scss";
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$mainFont: "DM Sans", sans-serif;
+
+
+h1 {
+    font-size: em(42);
+    letter-spacing: em(3);
+    font-family: $mainFont;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+@include respond-to(small) {
+  h1 {
+    font-size: em(200);
+  }
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+  font-size: em(16);
+  letter-spacing: em(2);
+  font-family: $mainFont;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+}
+
+a {
+}
