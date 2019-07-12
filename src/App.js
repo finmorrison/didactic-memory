@@ -1,15 +1,31 @@
 import React from "react";
 import "./App.scss";
+import Header from './Header'
 
-function App() {
-  return (
-    <div className="title-sect">
-      <header className="App-header">
-        <h1 class='header-title'>Findlay Morrison</h1>
-        <h4 class='header-subtext'>I build awesome websites</h4>
-      </header>
-    </div>
-  );
+class App extends React.Components {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isMenuOpen: false
+        };
+        this.handleToggleMenu = this.handleToggleMenu.bind(this);
+    }
+    handleToggleMenu() {
+        this.setState(state => ({
+            isMenuOpen: !state.isMenuOpen
+        }));
+    }
+    render() {
+        return (
+            <div>
+                <Header 
+                    isMenuOpen={this.state.isMenuOpen} 
+                    onToggleMenu={this.handleToggleMenu}
+                />
+                {/* Other stuff */}
+            </div>
+        );
+    }
 }
 
 export default App;

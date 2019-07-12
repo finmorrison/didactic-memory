@@ -17,16 +17,21 @@ h1 {
     text-transform: uppercase;
   }
 
-@include respond-to(small) {
-  h1 {
-    font-size: em(200);
-  }
-}
 
 h2 {
+    font-size: em(36);
+    letter-spacing: em(1);
+    font-family: $mainFont;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 h3 {
+    font-size: em(24);
+    letter-spacing: em(1);
+    font-family: $mainFont;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -48,3 +53,20 @@ p {
 
 a {
 }
+
+
+@include respond-to(small) {
+
+  }
+@include respond-to(medium) {
+
+  }
+@include respond-to(large) {
+
+  }
+@include respond-to(xlarge) {
+
+  }
+@include respond-to(xxlarge) {
+
+  }
